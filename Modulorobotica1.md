@@ -1,187 +1,265 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# # Il Primo Programma #
-
-# 
-
-# In[4]:
+# Il Primo Programma #
 
 
+
+
+```python
 print("Ciao", input("Inserisci il tuo nome: "), "!")
+```
+
+    Inserisci il tuo nome: Edoardo
+    Ciao Edoardo !
+    
 
 
-# In[5]:
-
-
+```python
 nome = "TemplateText"
 print(nome)
+```
+
+    Edoardo
+    
 
 
-# In[1]:
-
-
+```python
 print("hai inserito " + input("scegli nome della via"))
+```
+
+    scegli nome della viaciao
+    hai inseritociao
+    
+
+Ripetere il codice più volte
 
 
-# Ripetere il codice più volte
-
-# In[12]:
-
-
+```python
 nome = input("Inserisci il tuo nome: ")
-for x in range(3):
+for contatore in range(3):
     print("Ciao", nome, "!")
+```
+
+    Inserisci il tuo nome: Ciao
+    Ciao Ciao !
+    Ciao Ciao !
+    Ciao Ciao !
+    
+
+# Calcolatrice Python #
 
 
-# # Calcolatrice Python #
-
-# 
-
-# In[5]:
 
 
-n1 = int(input("Inserisci il primo numero: "))
+```python
+numero1 = int(input("Inserisci il primo numero: "))
 numero2 = int(input("Inserisci il secondo numero: "))
-print("La somma è:",  int(n1 + numero2))
+print("La somma è:",  int(numero1 + numero2))
+```
+
+    Inserisci il primo numero: 10
+    Inserisci il secondo numero: 20
+    La somma è: 30
+    
 
 
-# 
-
-# In[7]:
 
 
-print("La differenza è:", int(n1 - numero2))
+```python
+print("La differenza è:", int(numero1 - numero2))
+```
+
+    La differenza è: -10
+    
 
 
-# 
-
-# In[18]:
 
 
-print("La moltiplicazione è:", int(n1 * numero2))
+```python
+print("La moltiplicazione è:", int(numero1 * numero2))
+```
+
+    Inserisci il pirmo numero: 2
+    Inserisci il secondo numero: 2
+    La moltiplicazione è: 4
+    
 
 
-# 
-
-# In[23]:
 
 
-print("La divisione è:", int(n1 / numero2))
+```python
+print("La divisione è:", int(numero1 / numero2))
+```
+
+    Inserisci il pirmo numero: 2
+    Inserisci il secondo numero: 2
+    La divisione è: 1.0
+    
+
+# Loop e Ripetizione #
 
 
-# # Loop e Ripetizione #
-
-# In[25]:
-
-
+```python
 for x in range(11):
     print(x)
+```
+
+    0
+    1
+    2
+    3
+    4
+    5
+    6
+    7
+    8
+    9
+    10
+    
 
 
-# In[26]:
-
-
+```python
 for x in range(1,11):
     print(x)
+```
+
+    1
+    2
+    3
+    4
+    5
+    6
+    7
+    8
+    9
+    10
+    
+
+# Condizioni e Decisioni #
 
 
-# # Condizioni e Decisioni #
-
-# In[8]:
-
-
+```python
 # Calcolatrice Python con decisioni
 
 operazione = input("Inserisci l'operazione (+, -, *, /): ")
 
-n1 = float(input("Inserisci il primo numero: "))
+numero1 = float(input("Inserisci il primo numero: "))
 numero2 = float(input("Inserisci il secondo numero: "))
 
 if operazione == "+":
-    risultato = n1 + numero2
+    risultato = numero1 + numero2
 elif operazione == "-":
-    risultato = n1 - numero2
+    risultato = numero1 - numero2
 elif operazione == "*":
-    risultato = n1 * numero2
+    risultato = numero1 * numero2
 elif operazione == "/":
-    risultato = n1 / numero2
+    risultato = numero1 / numero2
 else:
     risultato = "Operazione non valida"
     
-print(risultato)
+print("Il risultato è:", risultato)
+```
+
+    Inserisci l'operazione (+, -, *, /): *
+    Inserisci il primo numero: 5
+    Inserisci il secondo numero: 4
+    Il risultato è: 20.0
+    
+
+# Contare fino a N #
 
 
-# # Contare fino a N #
-
-# In[14]:
-
-
+```python
 n = int(input("Inserisci un numero intero positivo:"))
 
 for x in range(1,n+1):
-    print(x)
+    print(numero)
+```
+
+    Inserisci un numero intero positivo:6
+    1
+    2
+    3
+    4
+    5
+    6
+    
+
+# Calcolare la Somma #
 
 
-# # Calcolare la Somma #
-
-# In[17]:
-
-
+```python
 n = int(input("Inserisci un numero intero positivo: "))
 somma = 0
 
 for x in range(1, n+1):
-    somma += x
+    #somma = somma + numero
+    somma += numero
 print("La somma dei primi", n, "numeri interi è:", somma)
+```
+
+    Inserisci un numero intero positivo: 3
+    La somma dei primi 3 numeri interi è: 6
+    
+
+# Calcolare il Quadrato dei Primi Numeri #
 
 
-
-
-# In[24]:
-
-
+```python
 n = int(input("Inserisci un numero intero positivo: "))
 
 print("Quadrati dei primi", n, "numeri:")
 
 for x in range (1, n+1):
-    quadrato = x ** 2
-    print("Il quadrato di", x, "è", quadrato)
+    quadrato = numero ** 2
+    print("Il quadrato di", numero, "è", quadrato)
+```
+
+    Inserisci un numero intero positivo: 5
+    Quadrati dei primi 5 numeri:
+    Il quadrato di 1 è 1
+    Il quadrato di 2 è 4
+    Il quadrato di 3 è 9
+    Il quadrato di 4 è 16
+    Il quadrato di 5 è 25
+    
+
+# Verificare la Parità #
 
 
-# # Verificare la Parità #
-
-# In[29]:
-
-
-n = int(input("Inserisci un numero: "))
+```python
+numero = int(input("Inserisci un numero: "))
 
 #Se input è DIVISIBILE(%) per 2 e ha resto 0 (== 0)
-if n % 2 == 0:
-    print(n, "é un numero pari.")
+if numero % 2 == 0:
+    print(numero, "é un numero pari.")
 else:
-    print(n, "è un numero dispari.")
+    print(numero, "è un numero dispari.")
+```
+
+    Inserisci un numero: 23
+    23 è un numero dispari.
+    
+
+# Calcolare il Fattoriale #
 
 
-# # Calcolare il Fattoriale #
-
-# In[55]:
-
-
+```python
 n = int(input("Inserire un numero intero positivo: "))
 fattoriale = 1
 
-for numero in range(1, n+1):
+for x in range(1, n+1):
+    #fattoriale = fattoriale * numero
     fattoriale *= numero
 print("Il fattoriale di", n, "è:", fattoriale)
+```
+
+    Inserire un numero intero positivo: 5
+    Il fattoriale di 5 è: 120
+    
+
+# Calcolare la media di una Lista di Numeri #
 
 
-# # Calcolare la media di una Lista di Numeri #
-
-# In[61]:
-
-
+```python
 numeri = [] #Lista vuota di nome numeri
 
 n = int(input("Quanti numeri vuoi inserire= ")) #Chiede quanti numeri voglio inserire dentro la lista vuota
@@ -194,13 +272,20 @@ for i in range(n):
 media = sum(numeri) / len(numeri) #Somma numeri dentro la lista e divide per lunghezza di quanti elementi ci sono
 
 print("La media dei numeri inseriti è:", media, numeri)
+```
+
+    Quanti numeri vuoi inserire= 4
+    Inserisci un numero: 3
+    Inserisci un numero: 3
+    Inserisci un numero: 3
+    Inserisci un numero: 3
+    La media dei numeri inseriti è: 3.0 [3.0, 3.0, 3.0, 3.0]
+    
+
+# Gioco dell'Indovinello #
 
 
-# # Gioco dell'Indovinello #
-
-# In[10]:
-
-
+```python
 import random #importa la libreria del random
 
 numero_da_indovinare =random.randint(1, 100) #spara un numero da 1 a 100
@@ -218,18 +303,35 @@ while True:
         print("Il numero è più grande")
     else:
         print("Il numero è più piccolo")
+```
+
+    Indovina il numero (1-100): 2
+    Il numero è più grande
+    Indovina il numero (1-100): 17
+    Il numero è più grande
+    Indovina il numero (1-100): 56
+    Il numero è più piccolo
+    Indovina il numero (1-100): 3
+    Il numero è più grande
+    Indovina il numero (1-100): 37
+    Il numero è più piccolo
+    Indovina il numero (1-100): 33
+    Il numero è più grande
+    Indovina il numero (1-100): 35
+    Il numero è più piccolo
+    Indovina il numero (1-100): 34
+    Bravo! Hai indovinato il numero 34 in 8 tentativi
+    
+
+# MORRA CINESE #
 
 
-# # MORRA CINESE #
-
-# In[69]:
-
-
+```python
 import random
 
 mosse = ["carta", "forbice", "sasso"]
 
-cpu = random.choice(mosse)
+computer_mossa = random.choice(mosse)
 
 print("Benvenuti al gioco del Morra Cinese!")
 scelta_giocatore = input("Scegli la tua mossa (Carta, forbici, sasso): ")
@@ -237,129 +339,152 @@ scelta_giocatore = input("Scegli la tua mossa (Carta, forbici, sasso): ")
 if scelta_giocatore not in mosse:
     print("Mossa non permessa")
 else:
-    print("Il computer ha scelto:", cpu)
-    if scelta_giocatore == cpu:
+    print("Il computer ha scelto:", computer_mossa)
+    if scelta_giocatore == computer_mossa:
         print("Pareggio!")
-    elif (scelta_giocatore == "carta" and cpu == "sasso") or \
-         (scelta_giocatore == "forbici" and cpu == "carta") or \
-         (scelta_giocatore == "sasso" and cpu == "forbici"):
+    elif (scelta_giocatore == "carta" and computer_mossa == "sasso") or \
+         (scelta_giocatore == "forbici" and computer_mossa == "carta") or \
+         (scelta_giocatore == "sasso" and computer_mossa == "forbici"):
         print("Hai Vinto!")
     else:
         print("Hai Perso!")
+```
+
+    Benvenuti al gioco del Morra Cinese!
+    Scegli la tua mossa (Carta, forbici, sasso): carta
+    Il computer ha scelto: sasso
+    Hai Vinto!
+    
+
+# Calcolo del fattoriale #
 
 
-# # Calcolo del fattoriale #
-
-# In[74]:
-
-
+```python
 n = int(input("Inserisci un numero intero: "))
 
 fattoriale = 1
 
 if n<0:
     print("Numero Negativo")
-elif n == 0:
+elif n ==0:
     print("Il numero di zero è un 1 per definizione")
 else:
-    for numero in range(1, n+1):
+    for x in range(1, n+1):
         fattoriale*=numero
 print(f"Il fattoriale di {n} è {fattoriale}")
+```
+
+    Inserisci un numero intero: 2
+    Il fattoriale di 2 è 2
+    
+
+# somma numeri n #
 
 
-# # somma numeri n #
-
-# In[13]:
-
-
-
+```python
+# Chiedere all'utente d'inserire un numero imtero positivo N
 
 N = int(input("Inserisci un numero intero positivo N: "))
 
-
+# Inizializzare la somma a zero
 somma = 0
 
-
-for numero in range(2, 2 * N + 1, 2):
+# Calcolare la somma dei primi N numeri pari
+for x in range(2, 2 * N + 1, 2):
     somma += numero
     
-
+# Stampare la somma
 print(f"la somma dei primi {N} numeri pari è {somma}")
+```
 
-
-# # CONTA VOCALI IN UNA FRASE #
-
-# In[14]:
-
-
-frase  = input("Inserisci una frase o una parola: ").lower() 
-
-
-conteggio_vocali = 0
-
-
-vowels = "aeiouy"
-
-
-for char in frase:
-
-    if char in vowels:
-        conteggio_vocali += 1
+    Inserisci un numero intero positivo N: 10
+    la somma dei primi 10 numeri pari è 110
     
 
+# CONTA VOCALI IN UNA FRASE #
+
+
+```python
+# Chiedere all'utente d'inserire una frase o una parola
+
+frase  = input("Inserisci una frase o una parola: ").lower() #Converti tutto in minuscolo per semplificare il contaggio
+
+# Inizializzare il contatore delle vocali
+conteggio_vocali = 0
+
+# Definisci le vocali da cercare
+vocali = "aeiou"
+
+# scansione ogni carattere nella frase
+for carattere in frase:
+    # Verifica se il carattere è una vocale
+    if carattere in vocali:
+        conteggio_vocali += 1
+    
+# Stampare la somma
 print(f"nella frase ci sono {conteggio_vocali} vocali")
+```
+
+    Inserisci una frase o una parola: CIAO
+    nella frase ci sono 3 vocali
+    
 
 
-# In[20]:
-
-
-
+```python
+# Chiedere all'utente di inserire un nuerp intero positivo N
 N = int(input("Inserisci un numero intero positivo N: "))
 lista = []
 
 
-
-for numero in range(2, 2 * N + 1,2):
+# Calcolare la somma dei primi n numeri pari
+for x in range(2, 2 * N + 1,2):
     lista.append(numero)
     
 print(lista)
+```
+
+    Inserisci un numero intero positivo N: 10
+    [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+    
+
+# IDNOVINA IL NUMERO DI DADO CASUALE (1 a 6) #
 
 
-# # IDNOVINA IL NUMERO DI DADO CASUALE (1 a 6) #
-
-# In[60]:
-
-
+```python
 import random
 
+# Genera un numero casuale da 1 a 6(simulando un lanco di un dado)
+numero_dado = random.randint(1, 6)
 
-die = random.randint(1, 6)
-
+# Chiedi all'utente d'indovinare il numero
 indovina = int(input("Indovina il numero del dado (da 1 a 6): "))
 
-
+# Verifica se l'utente ha indovinato correttamente
 if indovina <1 or indovina <0:
     print("numero non ammesso")
-elif indovina == die:
-    print(f"Complimenti il numero del dardo era {die}. Hai indovinato!")
+elif indovina == numero_dado:
+    print(f"Complimenti il numero del dardo era {numero_dado}. Hai indovinato!")
 else:
-    print(f"Mi dispiae, il numero del dado era {die}. Meglio fortuna la prossima volta!")
+    print(f"Mi dispiae, il numero del dado era {numero_dado}. Meglio fortuna la prossima volta!")
+```
+
+    Indovina il numero del dado (da 1 a 6): 6
+    Complimenti il numero del dardo era 6. Hai indovinato!
+    
+
+# SIMULAZIONE POPOLAZIONE #
 
 
-# # SIMULAZIONE POPOLAZIONE #
-
-# In[66]:
-
-
-
+```python
+# Inizializza la popolazione e gli anni
 popolazione = int(input("inserisci popolazione iniziale: "))
 anni = int(input("Inserisci il numero di anni da simulare: "))
-
+# Tasso di natalità e tasso di mortalità (% annuale)
 tasso_natalità = float(input("Inserisci tasso natalità: "))
 tasso_mortalità = float(input("Inserisci tasso mortalità: "))
 
 
-
+# Simulazione della crescita della popolazione
 for anno in range(anni):
     nascite = (popolazione * tasso_natalità) / 100
     morti = (popolazione * tasso_mortalità) / 100
@@ -368,21 +493,40 @@ for anno in range(anni):
     print(f"Anno {anni}, Popolazione {int(popolazione)}")
     
 print("Simulazione completata")
+```
+
+    inserisci popolazione iniziale: 10
+    Inserisci il numero di anni da simulare: 10
+    Inserisci tasso natalità: 10
+    Inserisci tasso mortalità: 10
+    Anno 10, Popolazione 10
+    Anno 10, Popolazione 10
+    Anno 10, Popolazione 10
+    Anno 10, Popolazione 10
+    Anno 10, Popolazione 10
+    Anno 10, Popolazione 10
+    Anno 10, Popolazione 10
+    Anno 10, Popolazione 10
+    Anno 10, Popolazione 10
+    Anno 10, Popolazione 10
+    Simulazione completata
+    
+
+# dire giorno ed ora con datetime #
 
 
+```python
+import datetime
 
-
-# In[67]:
-
-
-from datetime import datetime as dt
-
-today = dt.today()
+today = datetime.datetime.today()
 print(f"oggi è il giorno:{today: %d %m %y},  ore:{today: %H %M %S}")
+```
+
+    oggi è il giorno: 04 10 23,  ore: 09 09 04
+    
 
 
-# In[4]:
-
+```python
 
 print("Benvenuto nel convertitore di misura!")
 scelta = input("Cosa desideri convertire? (meters/foot/kilos/lbs): ").lower()
@@ -406,16 +550,21 @@ elif scelta == "lbs":
     valore = float(input("Inserisci il valore in lbs: "))
     risultato = valore * 3.28034
     print(f"{valore} lbs corrispondono = {risultato} chilogrammi.")
+```
+
+    Benvenuto nel convertitore di misura!
+    Cosa desideri convertire? (metri/piedi/chilograbbi/libbre): metri
+    Inserisci il valore in metri: 2
+    2.0 metri corrispondono = 6.56068 piedi.
+    
+
+# FIBONACCI #
 
 
-
-
-# In[69]:
-
-
-
-n = int(input("Inserisci un numero n per calcolare l'n-esimo numero di Fibonacci: "))
-
+```python
+# Chiedere all'utente d'inserire un numero n
+n = int(input("Inserisci un numeor n per calcolare l'n-esimo numero di Fibonacci: "))
+#inizializzare le variabili per i primi due numeri di fibonacci
 a=0
 b=1
 c=1
@@ -433,13 +582,16 @@ else:
     risultato = c
 # Stampare l'n-esio numero di fibonacci
 print("l'n-esimo numero di fibonacci è:", risultato)
+```
+
+    Inserisci un numeor n per calcolare l'n-esimo numero di Fibonacci: 20
+    l'n-esimo numero di fibonacci è: 4181
+    
+
+# FUNZIONI CUSTOM #
 
 
-
-
-# In[79]:
-
-
+```python
 def fibonacci(n):
     fib_series = [0, 1]
     
@@ -447,21 +599,26 @@ def fibonacci(n):
         fib_series.append(fib_series[-1] + fib_series[-2])
         
     return fib_series
+```
 
 
-# In[80]:
-
-
+```python
 fibonacci(9)
+```
 
 
-# In[5]:
 
 
-from math import pi
+    [0, 1, 1, 2, 3, 5, 8, 13, 21]
+
+
+
+
+```python
+import math
 
 def calcola_area_cerchio(raggio):
-    return pi * (raggio ** 2)
+    return math.pi * (raggio ** 2)
 
 def calcola_area_rettangolo(base, altezza):
     return base * altezza
@@ -489,21 +646,25 @@ elif scelta == 't':
     print(f"l'area del triangolo è {area:-2f}") #{area:-2f} significa di stampare il valore AREA ma massimo 2 numeri dopo virgola
 else:
     print("Scelta non valida, riprova")
+```
+
+    Benvenuro nella calcolatrice di aree
+    Vuoi calcolare l'area di un cerchio (c), rettangolo (r), triangolo (t): c
+    Inserisci il raggio del cerchio: 10
+    L'area del cerchio è  314.16
+    
+
+# calcolo interessi #
 
 
-# # calcolo interessi #
-
-# In[6]:
-
-
-def calcola_interessi(importo, interest, investing):
-    importo_finale = importo * (1 + interest / 100) ** investing
+```python
+def calcola_interessi(importo_iniziale, tasso_interesse, periodi_investimento):
+    importo_finale = importo_iniziale * (1 + tasso_interesse / 100) ** periodi_investimento
     return importo_finale
+```
 
 
-# In[8]:
-
-
+```python
 print("Benvetuo nel Calolatore d'interessi!")
 
 importo = float(input("Inserisci l'importo iniziale: "))
@@ -513,19 +674,55 @@ periodo = int(input("Inserisci il periodo d'investimento (anni): "))
 importo_finale = calcola_interessi(importo, tasso, periodo)
 
 print(f"l'importo finale dopo {periodo} anni è di {importo_finale:.2f} euro.")
+```
+
+    Benvetuo nel Calolatore d'interessi!
+    Inserisci l'importo iniziale: 200000
+    Inserisci il tasso d'interesse annuale (%): 32
+    Inserisci il periodo d'investimento (anni): 20
+    l'importo finale dopo 20 anni è di 51583240.31 euro.
+    
+
+# Calcolo forza gravitazionale 2 pianeti #
 
 
+```python
+def forza_gravitazionale(m1, m2, r):
+    #costante gravitazioamel
+    G = 6.67430e-11 #N(m/gk)^2
+    
+    #Calcola dela forza gravitazionale
+    F = (G * m1 * m2) / (r ** 2)
+    
+    return F
+```
 
-# # calcola anagrammi #
 
-# In[30]:
+```python
+#esempio di utilizzo
+massa_terra = 5.972e24 #kg
+massa_luna = 7.342e22 #kg
+distanza_terra_luna = 384400000 #metri
+
+forza = forza_gravitazionale(massa_terra, massa_luna, distanza_terra_luna)
+print(f"forza gravitazionale tra la terra e la luna: {forza} Newton")
+```
+
+    forza gravitazionale tra la terra e la luna: 1.9804922390990566e+20 Newton
+    
+
+# calcola anagrammi #
 
 
+```python
 from itertools import permutations
 k=0
 
 def trova_anagrammi(parola):
     anagrammi = ["".join(p) for p in permutations(parola)]
+                #unisce elementi in permutations di parola
+                #for p in permutations(parola):
+                #   anagrammi = ["".join(p)]
     return anagrammi
 
 print("Benvenuto nel risolutore di anagrammi!")
@@ -542,13 +739,27 @@ else:
             k+=1
             print(anagramma)
         print(f"gli anagrammi di '{parola_input}' sono: '{k}'")
+```
+
+    Benvenuto nel risolutore di anagrammi!
+    Inserisci una parola: edo
+    gi anagrammi di 'edo' sono: '0'
+    eod
+    gi anagrammi di 'edo' sono: '1'
+    deo
+    gi anagrammi di 'edo' sono: '2'
+    doe
+    gi anagrammi di 'edo' sono: '3'
+    oed
+    gi anagrammi di 'edo' sono: '4'
+    ode
+    gi anagrammi di 'edo' sono: '5'
+    
+
+# dizionario #
 
 
-# # dizionario #
-
-# In[5]:
-
-
+```python
 # Definizione dei tassi di cambio
 
 tassi_di_cambio= {
@@ -574,71 +785,108 @@ if valuta_di_partenza in tassi_di_cambio and valuta_destinazione in tassi_di_cam
 else:
     print("Valute non supportate. Assicurati di inserire valute valide.")
     
+```
+
+    Inserisci l'importo da convertire: 8329
+    Inserisci la valuta di partenza: dollari
+    Inserisci la valuta di destinazione: euro
+    8329.0 dollari sono equivalenti a 7079.65 euro
+    
 
 
-# In[6]:
-
-
+```python
 tassi_di_cambio["euro"]
+```
 
 
-# In[10]:
 
 
+    0.85
+
+
+
+
+```python
+# Chiedi all'utente di inserire una frase
 frase = input("Inserisci una frase: ")
 
-
+# Converti la frase in minuscolo per evitare proemi di maiuscole/minuscole
 frase = frase.lower()
 
-
+# Inizializza una lista di lettere dell'alfabeto
 alfabeto = 'abcdefghijklmnopqrstuvwxyz'
 
-
+# Inizializza un dizionare per tenere traccia del conteggio delle lettere
 conteggio_lettere = {}
 
-
+# Itera attraverso ciascuna lettera dell'alfabeto
 for lettera in alfabeto:
-    
+    #Conta quante volte apare a lettere dell'alfabeto
     conteggio = frase.count(lettera)
     
-    
+    #Aggiungi la lettera e il conteggio al dizionare se la lettera appare almeno una volta
     if conteggio > 0:
         conteggio_lettere[lettera] = conteggio
         
-
+#stampa il conteggio delle lettere in un formato leggibile
 for lettera, conteggio in conteggio_lettere.items():
     print(f"{lettera}: {conteggio}")
+```
+
+    Inserisci una frase: caiolamadonnadelsignore
+    a: 4
+    c: 1
+    d: 2
+    e: 2
+    g: 1
+    i: 2
+    l: 2
+    m: 1
+    n: 3
+    o: 3
+    r: 1
+    s: 1
+    
 
 
-# In[12]:
-
-
+```python
 conteggio_lettere.items()
+```
 
 
-# In[13]:
 
 
+    dict_items([('a', 4), ('c', 1), ('d', 2), ('e', 2), ('g', 1), ('i', 2), ('l', 2), ('m', 1), ('n', 3), ('o', 3), ('r', 1), ('s', 1)])
+
+
+
+
+```python
 prodotti = {}
 prodotti["pan bauletto"] = 2
 prodotti["coca cola"] = 3
+```
 
 
-# In[14]:
-
-
+```python
 prodotti
+```
 
 
-# In[1]:
 
 
+    {'pan bauletto': 2, 'coca cola': 3}
+
+
+
+
+```python
 from datetime import datetime
 import pytz
 
 print("Benvetuo nell'orologio mondiale")
 
-
+# Definisci le città e i relativi fusi orari
 citta_fusi_orari = {
     "New York": "America/New York",
     "Londra": "Europe/London",
@@ -661,38 +909,102 @@ while True:
                 print(f"L'ora corrente a {scelta_citta} è: {ora_corrente.strftime('%H:%M:%S')}")
             else:
                 print("citta non valid. Riprova")
+```
+
+    Benvetuo nell'orologio mondiale
+    
+    Città disponibili:
+    New York
+    Inserisci il nome della città per visualizzare l'ora (o 'esci' per uscire): New York
+    Londra
+    Inserisci il nome della città per visualizzare l'ora (o 'esci' per uscire): esci
+    citta non valid. Riprova
+    Tokyo
+    Inserisci il nome della città per visualizzare l'ora (o 'esci' per uscire): clear
+    Sydney
+    Inserisci il nome della città per visualizzare l'ora (o 'esci' per uscire): f
+    Rio de Janeiro
+    Inserisci il nome della città per visualizzare l'ora (o 'esci' per uscire): f
+    
+    Città disponibili:
+    New York
+    Inserisci il nome della città per visualizzare l'ora (o 'esci' per uscire): f
+    Londra
+    Inserisci il nome della città per visualizzare l'ora (o 'esci' per uscire): f
+    Tokyo
+    
 
 
+    ---------------------------------------------------------------------------
+
+    KeyboardInterrupt                         Traceback (most recent call last)
+
+    Cell In[1], line 20
+         17 for citta in citta_fusi_orari.keys():
+         18     print(citta)
+    ---> 20     scelta_citta = input("Inserisci il nome della città per visualizzare l'ora (o 'esci' per uscire): ").strip()
+         21     if scelta_citta.lower() == 'esci':
+         23         if scelta_citta in citta_fusi_orari.keys():
+    
+
+    File ~/anaconda3/lib/python3.11/site-packages/ipykernel/kernelbase.py:1175, in Kernel.raw_input(self, prompt)
+       1171 if not self._allow_stdin:
+       1172     raise StdinNotImplementedError(
+       1173         "raw_input was called, but this frontend does not support input requests."
+       1174     )
+    -> 1175 return self._input_request(
+       1176     str(prompt),
+       1177     self._parent_ident["shell"],
+       1178     self.get_parent("shell"),
+       1179     password=False,
+       1180 )
+    
+
+    File ~/anaconda3/lib/python3.11/site-packages/ipykernel/kernelbase.py:1217, in Kernel._input_request(self, prompt, ident, parent, password)
+       1214             break
+       1215 except KeyboardInterrupt:
+       1216     # re-raise KeyboardInterrupt, to truncate traceback
+    -> 1217     raise KeyboardInterrupt("Interrupted by user") from None
+       1218 except Exception:
+       1219     self.log.warning("Invalid Message:", exc_info=True)
+    
+
+    KeyboardInterrupt: Interrupted by user
 
 
-# In[5]:
+# Dizionari e main #
 
 
-
+```python
+# Funzione principale può avere qualsiasi nome
 def paolo():
     print("Mi chiamo Paolo")
     
-if __name__ == "__main__" : 
-                           
+if __name__ == "__main__" : #è una condizione logica che "si verifica sempre" e pertanto tutto ciò
+                           #che risulta indentato a questa ocondizione viene eseguita
     paolo()
+```
+
+    Mi chiamo Paolo
+    
 
 
-# In[8]:
-
-
-
+```python
+#Funzione principale puà avere uqalsiasi nome
 def main():
     print("la funzione principale del codice è stata eseguita, in questa ufnzione possono essere presenti funzioni s")
     
 if __name__ == "__main__": 
     main()
+```
+
+    la funzione principale del codice è stata eseguita, in questa ufnzione possono essere presenti funzioni s
+    
 
 
-# In[2]:
-
-
+```python
 #main
-
+# funzoone per il calcolo del BMI
 def calcola_bmi(peso, altezza):
     return peso / (altezza ** 2)
 
@@ -720,15 +1032,21 @@ def main():
     
 if __name__ == "__main__":
     main()
+```
 
-# In[3]:
+    Benvenuto nella calcolatri bmi!
+    Inserisci i tuo peso in chilogrammi: 62
+    Inserisci la tua altezza in metri: 190
+    il tuo BMI è 0.00, sei classificato come 'Sottopeso.'
+    
 
 
+```python
 cibo_calorie = {
     "pizza": 285,
     "hamburger": 250,
     "insalata": 100,
-    "pollo arrosto": 335,
+    "panino del mc": 335,
     "yogurt": 150
 }
 
@@ -743,7 +1061,7 @@ def calorie_consumate(cibo, quantita):
     else:
         return 0
     
-
+#Funzione principale
 def main():
     cibo_consumato = []
     
@@ -773,46 +1091,62 @@ def main():
             print("\nscelta non valida. riprova")
 if __name__ == "__main__":
     main()
+```
+
+    menù:
+    
+     1. aggiungi cibo consmato
+    
+     2. calcola calorie totali
+    
+     3 esci
+    scegli un opzione: 3
+    ok
+    
+
+Personaggi satorie e romanzi
 
 
-
-
-# In[3]:
-
-
+```python
 import random
 
-
+# Liste di speci, classi, armi e abilità
 speci = ["Elfo", "Umano" "Nano", "Orco", "Gnomo"]
 classi = ["Guerriero", "Mago", "Ranger", "Ladro", "Chierico"]
 armi = ["Spada", "Arco", "Bacchetta magica", "Ascia", "Daga"]
 abilità = ["Furtività", "Magia dell'acqua", "Camuffamento", "Estrazione mineraria", "Incantesimi di guarigione"]
 
-
+#Gebera un personaggio casuale
 specie = random.choice(speci)
 classe = random.choice(classi)
 arma = random.choice(armi)
 abilità_scelte = random.sample(abilità, random.randint(1,3))
 
-
+#stampa il personaggio generato
 print(f"Personaggio Fantasy Generato: ")
 print(f"Specie: {specie}")
 print(f"Classe: {classe}")
 print(f"Arma: {arma}")
 print(f"Abilità: {', '.join(abilità_scelte)}")
+```
+
+    Personaggio Fantasy Generato: 
+    Specie: Elfo
+    Classe: Mago
+    Arma: Arco
+    Abilità: Camuffamento, Incantesimi di guarigione, Estrazione mineraria
+    
 
 
-# In[8]:
-
-
+```python
 import random 
-
+# Liste di speci, classi, armi e abilità
 speci = ["Elfo", "Umano" "Nano", "Orco", "Gnomo"]
 classi = ["Guerriero", "Mago", "Ranger", "Ladro", "Chierico"]
 armi = ["Spada", "Arco", "Bacchetta magica", "Ascia", "Daga"]
 abilità = ["Furtività", "Magia dell'acqua", "Camuffamento", "Estrazione mineraria", "Incantesimi di guarigione"]
 
-
+#ufnzone per creare un personaggio causale
 def crea_personaggio():
     return {
         "Specie": random.choice(speci),
@@ -821,7 +1155,7 @@ def crea_personaggio():
         "Abilità": random.sample(abilità, random.randint(1,3))
     }
 
-
+#funzione principale
 def main():
     personaggio_generato = crea_personaggio()
     
@@ -831,22 +1165,28 @@ def main():
             valore = ', '.join(valore)
         print(f"{chiave}: {valore}")
         
-
+#eseguire la funzione main quando il programma viene eseguito
 if __name__ == "__main__":
     main()
+```
+
+    Personaggi Fantasy Generato:
+    Specie: Orco
+    Classe: Ladro
+    Arma: Ascia
+    Abilità: Magia dell'acqua, Incantesimi di guarigione
+    
 
 
-# In[10]:
-
-
+```python
 import random 
-
+# Liste di speci, classi, armi e abilità
 speci = ["Elfo", "Umano" "Nano", "Orco", "Gnomo"]
 classi = ["Guerriero", "Mago", "Ranger", "Ladro", "Chierico"]
 armi = ["Spada", "Arco", "Bacchetta magica", "Ascia", "Daga"]
 abilità = ["Furtività", "Magia dell'acqua", "Camuffamento", "Estrazione mineraria", "Incantesimi di guarigione"]
 
-
+#ufnzone per creare un personaggio causale
 def crea_personaggio():
     personaggio={
         "Specie": random.choice(speci),
@@ -856,7 +1196,7 @@ def crea_personaggio():
     }
     return personaggio
 
-
+#funzione principale
 def main():
     personaggio_generato = crea_personaggio()
     
@@ -866,16 +1206,22 @@ def main():
             valore = ', '.join(valore)
         print(f"{chiave}: {valore}")
         
-
+#eseguire la funzione main quando il programma viene eseguito
 if __name__ == "__main__":
     main()
+```
+
+    Personaggi Fantasy Generato:
+    Specie: UmanoNano
+    Classe: Guerriero
+    Arma: Arco
+    Abilità: Camuffamento
+    
+
+# La letteratura combinatoria #
 
 
-
-
-# In[12]:
-
-
+```python
 import random
 
 physical_traits = ["capelli nero", "capelli biondi", "occhi cazzurri", "occhi verdi"]
@@ -895,26 +1241,34 @@ def genera_personaggio():
     return descrizione
 print("Generatore di personaggi per romanzi")
 print(genera_personaggio())
+```
+
+    Generatore di personaggi per romanzi
+    Inserisci il nome del personaggio: edoardo
+    Nome: edoardo
+    Aspetto Fisico: occhi cazzurri
+    Aspetto Personale: ottimista
+    Sfondo: commerciale
+    Motivazione: vendetta
+    
+
+# citazione del giorno #
 
 
-
-
-# In[14]:
-
-
-
+```python
+#database di citazioni
 citazioni = [
-    "Non sforzare troppo qualcosa.. perché forse è shit - Edoardo",
+    "lao",
     "A",
     "B",
     "C",
 ]
 
-
+#Funzione per generare una citazione casuale
 def genera_citazione():
     return random.choice(citazioni)
 
-
+#funzione principale
 def main():
     print("Benvevuto nel generatore di citazioni")
     input("Premi invio per ottenere una citazione causale...")
@@ -924,13 +1278,49 @@ def main():
     
 if __name__ == "__main__":
     main()
+```
+
+    Benvevuto nel generatore di citazioni
+    Premi invio per ottenere una citazione causale...
+    citazione del giorno: Non sforzare troppo qualcosa.. perché forse è shit - Edoardo
+    
+
+# GENERATORE FRASI DA INFLUENCER #
 
 
+```python
+import random
+#lista di frammenti di citazioni famose (più brevi)
+frammenti = [
+    "ciao",
+    "come va?",
+    "dio",
+    "grazioso",
+    "madonna",
+    "blabla",
+    "lalalal",
+    "pipipipip",
+    "blululullulu"
+]
+#funzione per crare nuove citazioni rimenscolando i frammenti
+def crea_citazione():
+    num_frammenti = random.randint(5,7) #scegli un numero casuale di frammenti da utilizzare
+    citazione_rimescolata = random.sample(frammenti, num_frammenti)
+    nuova_citazione = " ".join(citazione_rimescolata)
+    return nuova_citazione
+
+#genera una nuova nuova citazione
+nuova_citazione = crea_citazione()
+print("Nuova citazione generata:")
+print(nuova_citazione)
+```
+
+    Nuova citazione generata:
+    dio come va? blabla madonna lalalal blululullulu
+    
 
 
-# In[17]:
-
-
+```python
 import random
 
 frammenti = [
@@ -944,43 +1334,14 @@ frammenti = [
     "pipipipip",
     "blululullulu"
 ]
-
+#funzione per crrare nuove citazioni mescolando i frammenti
 def crea_citazione():
-    num_frammenti = random.randint(5,7) 
-    citazione_rimescolata = random.sample(frammenti, num_frammenti)
-    nuova_citazione = " ".join(citazione_rimescolata)
-    return nuova_citazione
-
-
-nuova_citazione = crea_citazione()
-print("Nuova citazione generata:")
-print(nuova_citazione)
-
-
-# In[4]:
-
-
-import random
-
-frammenti = [
-    "Il mattino",
-    "il mare",
-    "#donna",
-    "#perte",
-    "Asdd",
-    "blabla",
-    "lalalal",
-    "pipipipip",
-    "blululullulu"
-]
-
-def crea_citazione():
-    num_frammenti = random.randint(4,7) 
+    num_frammenti = random.randint(4,7) #scegli un umero casuale di frammenti da utilizzare
     citazione_rimescolata = random.sample(frammenti, num_frammenti)
     nuova_citazione = " ".join(citazione_rimescolata)
     return nuova_citazione
     
-
+#genera una nuova citazione
 def main():
     nuova_citazione = crea_citazione()
     print("Nuova citazione generata:")
@@ -988,21 +1349,24 @@ def main():
     
 if __name__ == "__main__":
     main()
+```
+
+    Nuova citazione generata:
+    dio blululullulu madonna blabla pipipipip come va? ciao
+    
 
 
-# In[ ]:
-
-
+```python
 import random
 
-
+#liste di parole predefinite per la generazione dlela poesia
 aggettivi = ["dolce", "serena", "profondo", "luminoso", "gentile"]
 sostantivi = ["amore", "mare", "cielo", "vento", "sogno"]
 verbi = ["danza", "splende", "abbraccia", "canta", "sorride"]
 
-
+#genera una poesia casuale
 def genera_poesia():
-    poesia = f"""Il {random.choice(aggettivi)} {random.choice(sostantivi)} {random.choice(verbi)}.\n
-      Il {random.choice(aggettivi)} {random.choice(sostantivi)} {random.choice(verbi)}.\n
-      Nel {random.choice(aggettivi)} {random.choice(sostantivi)}"""
-
+    verso1 = f"Il {random.choice(aggettivi)} {random.choice(sostantivi)} {random.choice(verbi)}."
+    verso2 = f"Il {random.choice(aggettivi)} {random.choice(sostantivi)} {random.choice(verbi)}."
+    verso3 = f"Nel {random.choice(aggettivi)} {random.choice(sostantivi)}"
+```
