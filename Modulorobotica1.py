@@ -904,7 +904,7 @@ print(genera_personaggio())
 
 
 citazioni = [
-    "Non sforzare troppo qualcosa.. perché forse è shit - Edoardo",
+    "l",
     "A",
     "B",
     "C",
