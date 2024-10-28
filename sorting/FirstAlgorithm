@@ -1,0 +1,20 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+
+int main() {
+    // Write C++ code here
+    int vector[9] = {3, 1, 122, 47, 9, 32, 65, 734, 879};
+    for(int x = 0; x < 8; x++){ //size of the vector -1
+        for(int y = x; y < 8; y++){ //size of the vector -1
+            if(vector[x] > vector[y+1]){
+                std::cout << vector[x] << " is greater than " << vector[y+1] << std::endl;
+                int temp = vector[x];
+                vector[x] = vector[y+1];
+                vector[y+1] = temp;
+            }
+    }
+}
+for(int i = 0; i < 9; i++){
+        std::cout << vector[i] << " ";
+    }
+}
