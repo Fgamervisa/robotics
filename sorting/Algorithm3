@@ -1,0 +1,103 @@
+#include <iostream>
+#include <thread>
+#include <chrono>
+#include <cstdlib> // For srand and rand
+#include <ctime>   // For time
+
+const int SIZE = 1000;
+int vector[SIZE];
+
+void firstPart(int size) {
+    int min;
+    int minIndex;
+    int temp;
+    // Sort the first half of the array
+    for (int y = 0; y < (size / 2); y++) {
+        min = vector[y];
+        minIndex = y;
+        for (int x = y + 1; x < (size / 2); x++) {
+            if (min > vector[x]) {
+                min = vector[x];
+                minIndex = x;
+            }
+        }
+        temp = vector[y];
+        vector[y] = vector[minIndex];
+        vector[minIndex] = temp;
+    }
+}
+
+void secondPart(int size) {
+    int min;
+    int minIndex;
+    int temp;
+    // Sort the second half of the array
+    for (int y = (size / 2); y < size; y++) {
+        min = vector[y];
+        minIndex = y;
+        for (int x = y + 1; x < size; x++) {
+            if (min > vector[x]) {
+                min = vector[x];
+                minIndex = x;
+            }
+        }
+        temp = vector[y];
+        vector[y] = vector[minIndex];
+        vector[minIndex] = temp;
+    }
+}
+
+int main() {
+    // Seed the random number generator
+    srand(static_cast<unsigned int>(time(NULL)));
+
+    // Populate the array with random numbers
+    for (int pop = 0; pop < SIZE; pop++) {
+        vector[pop] = rand() % 10000;
+    }
+
+    // Start timing
+    auto start = std::chrono::high_resolution_clock::now();
+
+    // Create threads for firstPart and secondPart
+    std::thread t1(firstPart, SIZE);
+    std::thread t2(secondPart, SIZE);
+
+    // Wait for both threads to finish
+    t1.join();
+    t2.join();
+
+    // Stop timing
+    auto end = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double, std::milli> duration = end - start;
+
+    // Output the partially sorted array
+    std::cout << "Partially Sorted Array: ";
+    for (int val : vector) {
+        std::cout << val << " ";
+    }
+    std::cout << std::endl;
+
+    // Final merge step to fully sort the array
+    for (int i = 0; i < SIZE; ++i) {
+        for (int j = i + 1; j < SIZE; ++j) {
+            if (vector[i] > vector[j]) {
+                int temp = vector[i];
+                vector[i] = vector[j];
+                vector[j] = temp;
+            }
+        }
+    }
+
+    // Output the fully sorted array
+    std::cout << "Fully Sorted Array: ";
+    for (int val : vector) {
+        std::cout << val << " ";
+    }
+    std::cout << std::endl;
+
+    // Output the duration
+    std::cout << "Time taken for parallel sorting: " << duration.count() << " ms" << std::endl;
+
+    return 0;
+}
